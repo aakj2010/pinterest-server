@@ -13,9 +13,9 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors({ origin: "https://akj-pinterest-c.netlify.app" }))
+// app.use(cors({ origin: "https://akj-pinterest-c.netlify.app" }))
 
-// app.use(cors({ origin: "*" }))
+app.use(cors({ origin: "*" }))
 
 
 
