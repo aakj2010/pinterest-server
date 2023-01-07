@@ -17,8 +17,6 @@ app.use(cors({ origin: "https://pinterest-delta.vercel.app/" }))
 
 // app.use(cors({ origin: "*" }))
 
-
-
 app.use(express.json())
 
 app.use(express.urlencoded({ extended: false }))
