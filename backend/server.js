@@ -13,9 +13,12 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors({ origin: "https://pinterest-delta.vercel.app/" }))
+// app.use(cors({ origin: "https://pinterest-delta.vercel.app/" }))
 
-// app.use(cors({ origin: "*" }))
+app.use(cors({
+  origin: "*",
+  credentials: true
+}))
 
 app.use(express.json())
 
